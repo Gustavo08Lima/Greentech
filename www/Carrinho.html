@@ -18,6 +18,8 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/remix.icon/remixicon.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/detalhes.css">
     
 
 </head>
@@ -32,15 +34,49 @@
        
 
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="Carrinho" class="page color-theme-blue">
+            <div data-name="Detalhes" class="page color-theme-blue">
+
+                <div class="nav-top cart">
+
+                        <a href="/index/"><i class="ri-arrow-left-s-line"></i> </a>
+                        <strong> <i class="ri-shopping-cart-fill"></i> Carrinho</strong>      
+                        <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="ri-more-line"></i></a>
+    
+                </div>
+                <div class="popover popover-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                      <div class="list">
+                        <ul>
+                          <li><a id="esvaziar" href="/dialog/" class="list-button popover-close">
+                            <span class="mdi mdi-broom"></span> Esvaziar</a></li>
+                         
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- TAB BAR-->
+                <div  id="toolbarTotais"  style="margin-bottom: 100px;" class="toolbar toolbar-bottom">
+                    <div id="totais" class="toolbar-inner display-flex align-items-center justify-content-center">
+                        <div class="bt-bottom w-80 display-flex justify-content-space-between">
+                            <span>Subtotal: </span>
+                <strong><span id="subtotal"> R$ 800</span></strong>       
+                            
+                        </div>
+                        <div id="toolbarCheckout"  class="bt-bottom margin-top w-80 display-flex justify-content-space-between">
+                            <span>Frete </span>
+                <strong><span> R$ 10</span></strong>       
+                            
+                        </div>
+                    </div>
+                </div>
 
                      <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div  class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex align-items-center justify-content-center">
-                    <div class="flex-40">
-                        <span class="riscado color-gray">R$ 1400 </span> <h3 class="princing no-padding no-margin">R$1200</h3></div>
-                    <div class="flex-60">
-                        <button class="add-cart">Adicionar Carrinho</button>
+            
+                    <div class="flex-100">
+                        <button class="add-cart">Comprar </button>
                     </div>
                 </div>
             </div>
@@ -49,56 +85,76 @@
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                   <div class="prod-detail">
-                    <div class="buttons-top">
+                 <div id="listaCarrinho">
+                    <!--Item do carrinho-->
+
+                    <div class="item-carrinho">
+                        <div class="area-img">
+                            <img src="img/imagens/default.png" alt="">
+                        </div>
                         
-                            <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
-                            <a href="#"><i class="ri-heart-3-line"></i></a>
-                            <a href="#"><i class="ri-share-2-line"></i></a>
-                        
-                       
-                    </div> 
-                     <img src="img/imagens/airpod.png" alt="">
-                   </div>
-                 <div class="prod-content">
-                    <div class="block">
-                        <div class="line padding-top">
-                            <b class="margin-left">Nome do produto</b>
-                            <button class="promo-btn">Promoção</button>
+                    
+                    <div class="area-details">
+                        <div class="sup">
+                            <span class="name-prod">
+                                Xbox Series X
+                            </span>
+                            <a href="#" class="delete">
+                                <i class="mdi mdi-close"></i>
+                            </a>
                         </div>
-                        <div class="display-flex align-items-center justify-content-start">
-                            <button class="btn-rates"><i class="mdi mdi-star"></i>4.8</button>
-                            <button class="btn-rates"><i class="ri-thumb-up-fill"></i> 90%</button>
-                            <span class="reviews">110 reviews</span>
+                        <div class="middle">
+                            <span>1 TB</span>
                         </div>
-                        <div class="display-flex align-items-center justify-content-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptate alias earum! Quod, maiores ipsam nam ex quas sequi? Dolore laudantium excepturi molestias omnis inventore tempore ducimus sint officia eum.</p>
+                        <div class="preco-quantidade">
+                            <span>R$ 99.500</span>
+                            <div class="count">
+                                <a class="minus" href="">-</a>
+                                <input readonly class="qtd-item" type="text" value="1">
+                                <a class="plus" href="">+</a>
+                            </div>
                         </div>
-                        <table>
-                            <tr>
-                                <th>Caracteristica </th>
-                                <th>Detalhes</th>
-                            <tr>
-                                <td>
-                                    Bonito
-                                </td>
-                                <td>
-                                    Detalhes detalhados
-                                </td>
-                            </tr>
-                             <tr>
-                                <td>
-                                    Bonito
-                                </td>
-                                <td>
-                                    Detalhes detalhados
-                                </td>
-                            </tr> 
-                        </table>
                     </div>
                  </div>
-            </div>
-        </div>
+
+
+                  <!--Item do carrinho-->
+
+                  <div class="item-carrinho">
+                    <div class="area-img">
+                        <img src="img/imagens/default.png" alt="">
+                    </div>
+                    
+                
+                <div class="area-details">
+                    <div class="sup">
+                        <span class="name-prod">
+                            Xbox Series X
+                        </span>
+                        <a href="#" class="delete">
+                            <i class="mdi mdi-close"></i>
+                        </a>
+                    </div>
+                    <div class="middle">
+                        <span>1 TB</span>
+                    </div>
+                    <div class="preco-quantidade">
+                        <span>R$ 99.500</span>
+                        <div class="count">
+                            <a class="minus" href="">-</a>
+                            <input readonly class="qtd-item" type="text" value="1">
+                            <a class="plus" href="">+</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                 
+        </div>  
+
+        
+        
+    </div> 
+    
     </div>
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>

@@ -111,8 +111,8 @@ table {
 }
 
 td, th {
-    padding: 1px;
-    text-align: 1px solid;
+    padding: 10px 5px;
+    text-align: center;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
@@ -120,7 +120,7 @@ td, th {
 
 th {
     background-color: #ddd;
-    color: black;
+ 
 }
 
 .flex-40 {

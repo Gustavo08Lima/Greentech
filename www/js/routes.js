@@ -31,7 +31,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-    app.views.main.router.navigate('/Carrinho/');
+//app.views.main.router.navigate('/carrinho/');
 
     $.getScript('js/index.js')
     var swiper = new Swiper(".mySwiper", {
@@ -199,6 +199,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/detalhes.js')
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
@@ -208,17 +209,23 @@ var app = new Framework7({
     {
       path: '/Carrinho/',
       url: 'Carrinho.html',
-      animate: false,
+       options: {
+        transition: 'f7-push',
+       },
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
+    
    
 		},
 		pageAfterIn: function (event, page) {
 		// fazer algo depois da página ser exibida
+    $("#menuPrincipal").hide("fast")
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/carrinho.js')
+    
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM

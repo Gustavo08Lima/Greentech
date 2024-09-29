@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
@@ -60,13 +60,13 @@
               <!--Nav top-->
               <div class="top-nav">
                 <h1 class="title-logo"><span>Green</span>tech</h1>
-                <a href="#" class="btn-cart" data-count="0">
+                <a href="/Carrinho/" class="btn-cart" data-count="0">
                     <i class="ri-shopping-bag-line"></i>
                 </a>
               </div>
 
               <form >
-                <input type="text" placeholder="O que procura?">
+                <input id="search" type="text" placeholder="O que procura?">
                 <i class="busca ri-search-2-line"></i>
               </form>
 
@@ -76,8 +76,8 @@
                     <div class="block no-margin-top">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                              <div class="swiper-slide"><img class="img-fluid" src=".//img/imagens/propaganda.png" alt=""></div>
-                              <div class="swiper-slide"><img class="img-fluid" src=".//img/imagens/propaganda2.png" alt=""></div>
+                              <div class="swiper-slide"><img class="img-fluid" src="./img/imagens/propaganda.png" alt=""></div>
+                              <div class="swiper-slide"><img class="img-fluid" src="./img/imagens/propaganda2.png" alt=""></div>
                               <div class="swiper-slide"><img class="img-fluid" src="./img/imagens/propaganda3.png" alt=""></div>
                               <div class="swiper-slide"><img class="img-fluid" src="./img/imagens/propaganda4.png" alt=""></div>
  
@@ -93,7 +93,7 @@
                           <div class="swiper Categorias">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide"><button class="filter-btn active">Todas</button></div>
-                              <div class="swiper-slide"><button class="filter-btn active">Smartwatches</button></div>
+                              <div class="swiper-slide"><button class="filter-btn">Smartwatches</button></div>
                               <div class="swiper-slide"><button class="filter-btn">TVs</button></div>
                               <div class="swiper-slide"><button class="filter-btn">PCs</button></div>
                               <div class="swiper-slide"><button class="filter-btn">Laptops</button></div>
@@ -119,75 +119,84 @@
                           </div>
                           <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
                            
-                           <!--Card-->
-                            <div class="item-card">
-                                <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/imagens/airpod.png" alt="">
-                                    </div>
-                            
-                                    
-                                    <div class="nome-rating">
-                                        <span class="color-gray">Airpods</span>
-                                        <span class="bold margin-right"> <i class="mdi mdi-star"></i>
-                                        4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                            </div>
-                                     <!--Card-->
-                                     <div class="item-card">
-                                        <a href="#" class="item">
-                                            <div class="img-container">
-                                                <img src="img/imagens/xbox.png" alt="">
-                                            </div>
-                                    
-                                            
-                                            <div class="nome-rating">
-                                                <span class="color-gray">Xbox Series X</span>
-                                                <span class="bold margin-right"> <i class="mdi mdi-star"></i>
-                                                4.8
-                                                </span>
-                                            </div>
-                                            <div class="price">R$ 299</div>
-        
-                                            
-        
-                                        </a>
-                          </div>
 
-                             <!--Card-->
-                             <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="img/imagens/macbook.png" alt="">
-                                    </div>
-                            
-                                    
-                                    <div class="nome-rating">
-                                        <span class="color-gray">Airpods</span>
-                                        <span class="bold margin-right"> <i class="mdi mdi-star"></i>
-                                        4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                            </div>
-                               <!--Card-->
-                               <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="img/imagens/iphone.png" alt="">
-                                    </div>
-                            
-                                    
-                                    <div class="nome-rating">
-                                        <span class="color-gray">Airpods</span>
-                                        <span class="bold margin-right"> <i class="mdi mdi-star"></i>
-                                        4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                            </div>
+                                <!--Card Skeleton-->
+                                <div class="item-card">
+                                    <a href="/detalhes/" class="item">
+                                        <div class="img-container skeleton-effect-wave">     
+                                        </div>
+                                
+                                        
+                                        <div class="nome-rating">
+                                            <span style="margin-right: auto; width: 90px" class="gelo skeleton-effect-wave color-gray"></span>
+                                            <span style="width: 30px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave"></span>
+                                            <span style="width: 30px; margin-right: 15px;"
+                                                class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        </div>
+                                        <div class="price">
+                                             <span style="width: 60px; margin-top: 5px; height: 20px; "
+                                            class="gelo skeleton-effect-wave skeleton-block"></span></div>
+                                </div>
+
+                                 <!--Card Skeleton-->
+                                 <div class="item-card">
+                                    <a href="/detalhes/" class="item">
+                                        <div class="img-container skeleton-effect-wave">     
+                                        </div>
+                                
+                                        
+                                        <div class="nome-rating">
+                                            <span style="margin-right: auto; width: 90px" class="gelo skeleton-effect-wave color-gray"></span>
+                                            <span style="width: 30px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave"></span>
+                                            <span style="width: 30px; margin-right: 15px;"
+                                                class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        </div>
+                                        <div class="price">
+                                             <span style="width: 60px; margin-top: 5px; height: 20px; "
+                                            class="gelo skeleton-effect-wave skeleton-block"></span></div>
+                                </div>
+
+                                 <!--Card Skeleton-->
+                                 <div class="item-card">
+                                    <a href="/detalhes/" class="item">
+                                        <div class="img-container skeleton-effect-wave">     
+                                        </div>
+                                
+                                        
+                                        <div class="nome-rating">
+                                            <span style="margin-right: auto; width: 90px" class="gelo skeleton-effect-wave color-gray"></span>
+                                            <span style="width: 30px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave"></span>
+                                            <span style="width: 30px; margin-right: 15px;"
+                                                class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        </div>
+                                        <div class="price">
+                                             <span style="width: 60px; margin-top: 5px; height: 20px; "
+                                            class="gelo skeleton-effect-wave skeleton-block"></span></div>
+                                </div>
+
+                                 <!--Card Skeleton-->
+                                 <div class="item-card">
+                                    <a href="/detalhes/" class="item">
+                                        <div class="img-container skeleton-effect-wave">     
+                                        </div>
+                                
+                                        
+                                        <div class="nome-rating">
+                                            <span style="margin-right: auto; width: 90px" class="gelo skeleton-effect-wave color-gray"></span>
+                                            <span style="width: 30px; margin-right: 5px;"
+                                            class="gelo skeleton-effect-wave"></span>
+                                            <span style="width: 30px; margin-right: 15px;"
+                                                class="gelo skeleton-effect-wave skeleton-block"></span>
+                                        </div>
+                                        <div class="price">
+                                             <span style="width: 60px; margin-top: 5px; height: 20px; "
+                                            class="gelo skeleton-effect-wave skeleton-block"></span></div>
+                                </div>
+
+
                         
                     </div>    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
